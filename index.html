@@ -7,9 +7,111 @@
 	<meta name="author" content="polishguy101">
 	<meta name="favourite DELTARUNE charachter" content="Seth">
 	<meta name="reason why i put random meta tags" content="none">
-	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 	<link rel="icon" href="icon.ico">
 	<title>My Website</title>
+	<style>
+		/*
+			NOTE TO SELF:
+			Please put elements with only one value in one line,
+			unless they have a comment.
+		*/
+		@font-face {
+			font-family: 'TimesMyRoman';
+			src: url('TimesMyRoman.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+		html { scroll-behavior: smooth; }
+		body {
+			background-color: #BF77F6;
+			color: #4e008e;
+			font-family: 'TimesMyRoman', Times, serif;
+			text-align: justify;
+		}
+		header, article h2, .mid-header { text-align: center; }
+		#main {
+			background-color: #32004A;
+			color: whitesmoke;
+			border: 5px solid;
+			margin: 0% 30%;
+			padding: 0px 20px;
+		}
+		#seth-glass-break {	font-size: 72px; }
+		footer {
+			background-color: lightgray;
+			color: black;
+			font-family: sans-serif;
+		}
+		::marker { 
+			content: "\1F49C";
+			/* purple heart emoji (💜) */
+		}
+		#other-parts { text-align: center; }
+		#other-parts button {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: #edc2ff;
+			color: #150015;
+			margin-right: 50px;
+			font-family: 'Arial', 'Helvetica', sans-serif;
+			font-size: 20px;
+		}
+		#writing-button {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: #edc2ff;
+			color: #150015;
+			margin-right: 50px;
+			font-family: sans-serif;
+			font-size: 16px;
+		}
+		main img { display: inline; }
+		/*
+			NOTE TO SELF:
+			this only applies to images that are in the line.
+			Images that start a line should have `display: block;`.
+		*/
+		figcaption { text-align: center; }
+		.piece1 { padding-right: 240px; }
+		#main h3::before {
+			content: "\002B";
+			/* plus sign (+) */
+			color: #BF77F6;
+			margin-right: 20px;
+		}
+		#main p::before {
+			content: "\0020";
+			/* space ( ) */
+			margin-right: 20px;
+		}
+		#gmaps {
+			border: 1px solid #210;
+			width: 600px;
+			height: 450px;
+			text-align: center;
+			vertical-align: center;
+		}
+		iframe {
+			background-color: white; 
+			color: black; 
+			font-family: 'Times New Roman', Times, serif;
+		}
+		main iframe { display: inline; }
+		#ie { font-family: 'Arial', 'Helvetica', sans-serif; }
+		pre {
+			background-color: #111;
+			margin: 0% 20%;
+		}
+		code {
+			color: aqua;
+			font-family: 'Courier New', monospace;
+		}
+		code .comment { color: #444; }
+		code .cdata { color: red; }
+	</style>
 </head>
 <body>
 	<header>
