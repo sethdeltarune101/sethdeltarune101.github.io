@@ -6,7 +6,7 @@ metadata:
   in_development: true
   release_date: 01.09.2026 
   # dd.mm.yyyy
-  mime_type_list:
+  mime_types:
     mime_type_1: "text/html"
     mime_type_2: "text/javascript"
     mime_type_3: "text/css"
