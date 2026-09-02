@@ -11,5 +11,30 @@ metadata:
     mime_type_2: "text/javascript"
     mime_type_3: "text/css"
     mime_type_4: "application/yaml"
-  elements_used:
-  
+elements_used:
+  xmlns:l: "https://sethdeltarune.github.io/definitions/htmltaglist"
+  tags:
+    # (in linear use order)
+    l:html: 1
+    l:head: 1
+    l:body: 1
+    l:header: 1
+    l:h1: 1
+    l:main: 1
+    l:p: 4
+    l:abbr: 2
+    l:hr: 3
+    l:div: 2
+    l:h2: 2
+    l:h3: 2
+    l:ul: 3
+    l:li: 7
+    l:a: 8
+    l:img: 2
+    l:sup: 2
+    l:button: 6
+    l:footer: 1
+    l:address: 1
+    l:br: 3
+    l:script: 1
+    l:noscript: 1
