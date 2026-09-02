@@ -24,6 +24,7 @@ btn5.addEventListener('click', function () {
 btn6.addEventListener('click', function () {
 	window.location.href = 'int.html';
 });
+// text to hex
 textInput.addEventListener('input', () => {
 	const text = textInput.value;
 	const hexResult = Array.from(text)
@@ -31,4 +32,20 @@ textInput.addEventListener('input', () => {
 		.join(' ');
 
 	hexInput.value = hexResult;
+});
+// hex to text
+hexInput.addEventListener('input', () => {
+	const hex = hexInput.value.trim();
+	if (!hex) {
+		textInput.value = '';
+		return;
+	}
+	try {
+		const textResult = hex.split (/\s+/)
+			.map(h => String.fromCharCode(parseInt(h, 16)))
+			.join('');
+
+	} catch (error) {
+		textInput.value = "Incorrect hexadecimal format"
+	}
 });
