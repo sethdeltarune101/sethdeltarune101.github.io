@@ -24,3 +24,11 @@ btn5.addEventListener('click', function () {
 btn6.addEventListener('click', function () {
 	window.location.href = 'int.html';
 });
+textInput.addEventListener('input', () => {
+	const text = textInput.value;
+	const hexResult = Array.from(text)
+		.map(char => char.charCodeAt(0).toString(16).padStart(2, '0'))
+		.join(' ');
+
+	hexInput.value = hexResult;
+});
