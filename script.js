@@ -4,6 +4,8 @@ const btn3 = document.getElementById('audio-button');
 const btn4 = document.getElementById('video-button');
 const btn5 = document.getElementById('pictures-button');
 const btn6 = document.getElementById('objects-button');
+const textInput = document.getElementById('textInput');
+const hexInput = document.getElementById('hexInput');
 btn1.addEventListener('click', function() {
 	window.location.href = 'writing.html';
 });
