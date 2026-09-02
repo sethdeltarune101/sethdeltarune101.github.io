@@ -4,8 +4,8 @@
 	unless they have a comment.
 */
 @font-face {
-	font-family: 'TimesMyRoman';
-	src: url('TimesMyRoman.woff2') format('woff2');
+	font-family: 'flower-serif';
+	src: url('FlowerSerif.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
