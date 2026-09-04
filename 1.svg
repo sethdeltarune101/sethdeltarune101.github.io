@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://w3.org" viewBox="0 0 100 100" width="100%" height="100%">
-  <!-- Tutaj dodaj swoje elementy graficzne -->
-  <circle cx="50" cy="50" r="40" fill="#4CAF50" />
+  <path d="M450 50 H500 V100 H550 V150 H500 V200 H450 V150 H400 V100 H450 V50 Z" fill="black" stroke="black" />
 </svg>
