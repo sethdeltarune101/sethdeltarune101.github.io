@@ -36,3 +36,19 @@ const hexBtn = document.getElementById('d-result');
 
 const textInput = document.getElementById('encode');
 const textBtn = document.getElementById('e-result');
+
+// 2. Hex to text function (triggered by d-result button)
+hexBtn.addEventListener('click', () => {
+	const hexValue = hexInput.value.trim();
+	if (!hexValue) return;
+
+	// space separation
+	const hexArray = hexValue.split(' ');
+	let textResult = '';
+
+	for (let i = 0; i < hexArray.length; i++) {
+		textResult += String.fromCharCode(parseInt(hexArray[i], 16));
+	}
+
+textInput.value = textResult;
+	
