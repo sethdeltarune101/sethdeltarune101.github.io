@@ -3,9 +3,11 @@
   STYLES
 */
 
+/* NAMESPACES */
 @namespace xas url('https://sethdeltarune101.github.io/spreadsheetxmlns');
 @namespace xh url('https://sethdeltarune101.github.io/innerhtml');
 
+/* XAS NAMESPACE ELEMENTS */
 xas|spreadsheet {
   display: block;
   font-family: 'Times New Roman', Times, serif;
