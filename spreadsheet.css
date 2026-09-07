@@ -1,15 +1,35 @@
 @namespace xas url('https://sethdeltarune101.github.io/spreadsheetxmlns');
+@namespace xh url('https://sethdeltarune101.github.io/innerhtml');
 
 xas|spreadsheet {
   display: block;
   font-family: 'Times New Roman', Times, serif;
+  background-c
 }
 
 xas|label {
   display: block;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
-  padding-left: 1em;
+  margin-left: 1em;
   font-size: 2em;
   font-weight: 1000;
+}
+
+xas|table {
+  display: table;
+  margin-left: 1em;
+  border: 1px solid #000;
+}
+
+xas|row {
+  display: table-row;
+  border: 1px solid #000;
+}
+
+xas|cell {
+  display: table-cell;
+  border: 1px solid #000;
+  text-align: left;
+  vertical-align: bottom;
 }
