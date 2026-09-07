@@ -37,4 +37,28 @@ xas|cell {
   border: 1px solid #000;
   text-align: left;
   vertical-align: bottom;
+  padding: 1em;
+}
+
+xas|integer {
+  font-family: monospace;
+  color: red;
+}
+
+xas|boolean[xas|type="true"] {
+  content: "true";
+  text-align: center;
+  vertical-align: middle;
+  color: blue;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+xas|boolean[xas|type="false"] {
+  content: "false";
+  text-align: center;
+  vertical-align: middle;
+  color: blue;
+  font-family: monospace;
+  font-weight: 700;
 }
