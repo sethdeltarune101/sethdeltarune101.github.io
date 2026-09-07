@@ -1,1 +1,15 @@
+@namespace xas url('https://sethdeltarune101.github.io/spreadsheetxmlns');
 
+xas|spreadsheet {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+xas|label {
+  display: block;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  padding-left: 1em;
+  font-size: 2em;
+  font-weight: 1000;
+}
