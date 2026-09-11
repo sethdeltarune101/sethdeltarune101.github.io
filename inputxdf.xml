@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xdf:document xmlns:xdf="https://sethdeltarune101.github.io/xdocument" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:htm="https://sethdeltarune101.github.io/innerhtml">
-
+  <xdf:page xdf:id="1">
+    <xdf:pRp xdf:type="xdf|page[1]" margin="" font="'Arial', 'Helvetica', sans-serif" fsize="1em" fweight="400" fstyle="0" thalign="0" tdecor="0" bgcolor="#FFFFFF" fgcolor="#000000" />
+  </xdf:page>
 </xdf:document>
