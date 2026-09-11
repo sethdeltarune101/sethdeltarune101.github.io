@@ -3,6 +3,23 @@
 	Please put elements with only one value in one line,
 	unless they have a comment.
 */
+/* CUSTOM ELEMENTS DEFAULT STYLING - DO __NOT__ CHANGE */
+doc-title {
+	display: block;
+	font-size: 3em;
+	font-weight: bold;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
+extra-bold {
+	display: inline;
+	font-weight: 800;
+}
+black-text {
+	display: inline;
+	font-weight: 900;
+}
+/* CUSTOM FONT VARIABLE DEFINITION - CHANGE WHEN COMPLETE to (FlowerSerif.woff2) */
 @font-face {
 	font-family: 'flower-serif';
 	src: url('FlowerSerif.woff2') format('woff2');
@@ -10,6 +27,7 @@
 	font-style: normal;
 	font-display: swap;
 }
+/* REGULAR STYLING */
 html { scroll-behavior: smooth; }
 body {
 	background-color: #BF77F6;
