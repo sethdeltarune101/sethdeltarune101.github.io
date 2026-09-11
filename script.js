@@ -47,3 +47,35 @@ class DocTitle extends HTMLElement {
   }
 }
 customElements.define('doc-title', DocTitle);
+class ExtraBold extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+      <style>
+        :host {
+          font-weight: 800;
+          display: inline;
+        }
+      </style>
+      <slot></slot>
+    `;
+  }
+}
+customElements.define('extra-bold', ExtraBold);
+class BlackText extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+      <style>
+        :host {
+          font-weight: 900;
+          display: inline;
+        }
+      </style>
+      <slot></slot>
+    `;
+  }
+}
+customElements.define('black-text', BlackText);
