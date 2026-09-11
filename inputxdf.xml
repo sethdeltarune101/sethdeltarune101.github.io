@@ -6,6 +6,7 @@
       <xdf:title id="1">
         <xdf:pRp xdf:type="xdf|id[1]" fweight="900" thalign="1" />
         <xdf:data xdf:type="text/string">Basic XDF Document</xdf:data>
+      </xdf:title>
     </xdf:pageContent>
   </xdf:page>
 </xdf:document>
