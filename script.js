@@ -24,31 +24,26 @@ btn5.addEventListener('click', function () {
 btn6.addEventListener('click', function () {
 	window.location.href = 'int.html';
 });
-
-
-// =======================
-// HEX ↔ TEXT
-// =======================
-
-// 1. getting the html elements
-const hexInput = document.getElementById('decode');
-const hexBtn = document.getElementById('d-result');
-
-const textInput = document.getElementById('encode');
-const textBtn = document.getElementById('e-result');
-
-// 2. Hex to text function (triggered by d-result button)
-hexBtn.addEventListener('click', () => {
-	const hexValue = hexInput.value.trim();
-	if (!hexValue) return;
-
-	// space separation
-	const hexArray = hexValue.split(' ');
-	let textResult = '';
-
-	for (let i = 0; i < hexArray.length; i++) {
-		textResult += String.fromCharCode(parseInt(hexArray[i], 16));
-	}
-
-textInput.value = textResult;
-	
+class DocTitle extends HTMLElement {
+  constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'open' });
+    const heading = document.createElement('span');
+    heading.setAttribute('role', 'heading');
+    heading.setAttribute('aria-level', '1');
+    heading.innerHTML = `<slot></slot>`;
+    const style = document.createElement('style');
+    style.textContent = `
+      span {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+      }
+    `;
+    shadow.appendChild(style);
+    shadow.appendChild(heading);
+  }
+}
+customElements.define('doc-title', DocTitle);
