@@ -14,9 +14,19 @@
   </style>
 </head>
 <body>
-  <p>
+  <p id="para">
     
   </p>
-  <script></script>
+  <script>
+    const h = document.getElementById("para");
+    for (let i = 1; i <= 1000; i++;) {
+      para.innerHTML += `<span id="${i}>&#12644;&#12644;&#12644;&#12644;&#12644;&#12644;</span>`
+      const bubble = document.getElementById(i);
+      bubble.addEventListener('click', () => {
+        bubble.style.backgroundColor = "#888";
+        bubble.style.color = "#888";
+      }
+    }
+  </script>
 </body>
 </html>
